@@ -22,5 +22,5 @@ def dvars(img: nib.Nifti1Image) -> np.array:
 
     diff = np.diff(data_2d, axies=0)
     dvars = np.sqrt(np.mean(np.square(diff)))
-    
+
     return dvars
